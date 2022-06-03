@@ -1,0 +1,278 @@
+@font-face {
+    font-family: SignikaNegative;
+    src: url(SignikaNegative.ttf);
+}
+:root{
+    --color-br: pink;
+    --color-br-hv: azure;
+    --color-br-1: white;
+    --color-text: black;
+    --color-text-1: gray;
+    --color-card: aqua;
+    --color-text-hv: rgb(0, 88, 176);
+}
+
+[data-theme="dark"] {
+    --color-br: rgb(46, 46, 46);
+    --color-br-hv: gray;
+    --color-br-1: rgb(169, 169, 169);
+    --color-text: white;
+    --color-text-1: gray;
+    --color-card: rgb(101, 101, 101);
+    --color-text-hv: rgb(123, 240, 151);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-br);
+    border-radius: 3px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: SignikaNegative;
+    background-color: var(--color-br-1);
+}
+.mot{
+    width: 100%;
+}
+
+.mot *{
+    color: black;
+}
+
+.mot_Hai{
+    cursor: pointer;
+    display: block;
+    color: var(--color-text);
+    font-size: 19px;
+    float: left;
+    width: 12.5%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-right: 2px solid var(--color-text);
+    border-top: 2px solid var(--color-text);
+    border-bottom: 2px solid var(--color-text);
+    background-color: var(--color-br);
+}
+
+.icon_home{
+    font-size: 20px;
+    background-color: var(--color-br);
+    color: var(--color-text);
+    margin: 0 5px;
+}
+
+.the_Inp{
+    width: 50%;
+    height: 40px;
+
+}
+
+.mot_Hai:hover {
+    background-color: var(--color-br-hv);
+    color: var(--color-text);
+    font-size: 21px;
+}
+
+.quayVe:hover > .icon_home{
+    font-size: 21px;
+    background-color: var(--color-br-hv);
+    color: var(--color-text);
+}
+
+
+.img_Mot{
+    width: 100%;
+}
+
+.body1{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 430px;
+    color: var(--color-text);
+    /* background-color: rgb(92, 92, 92); */
+}
+
+.card{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 10px;
+    left: 20px;
+    background-color: var(--color-card);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.card1{
+    position: absolute;
+    width: 370px;
+    height: 400px;
+    top: 10px;
+    left: 20px;
+    background-color: var(--color-card);
+    border-radius: 5px;
+}
+
+.card *, .card1 *{
+    background-color: var(--color-card);
+}
+
+.textH{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    background-color: rgb(243, 238, 231);
+    color: rgb(106, 106, 106);
+}
+
+.icon_qr{
+    margin-right: 10px;
+    font-size: 30px;
+    color: rgb(99, 99, 95);
+    background-color: rgb(243, 238, 231);
+}
+
+.theanh{
+    display: block;
+    text-align: center;
+}
+
+.anhhoso{
+    margin-top: 3%;
+    width: 30%;
+    height: auto;
+    border-radius: 9px;
+}
+
+.cmot{
+    left: calc((100% - 370px * 2 - 410px) / 3 + 410px);
+}
+
+.chai{
+    left: calc((100% - 1210px) / 3 * 2 + 820px);
+}
+
+.ten{
+    font-size: 18px;
+    margin-top: 8px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.khungIfon{
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.inFo{
+    display: inline-block;
+    width: 80%;
+    height: 36px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 7px;
+    color: black;
+    text-align: left;
+    line-height: 36px;
+    border-radius: 3px;
+    margin-left: 10%;
+}
+
+.icon_card{
+    margin: 0 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+.anhhoso:hover{
+    width: 35%;
+    transition: all 1s;
+}
+
+.inFo:hover{
+    background-color: gray;
+    color: azure;
+}
+
+.inFo:hover > .icon_card{
+    background-color: gray;
+    color: azure;
+}
+
+.chanTrang{
+    width: 100%;
+    display: flex;
+    margin-top: 12%;
+}
+
+.chanTrang *{
+    background-color: var(--color-br);
+}
+
+.theChan{
+    display: block;
+    flex: 1;
+    height: 150px;
+    /* background-color: var(--color-br); */
+}
+
+.oChan{
+    margin-left: 19px;
+}
+
+.textChan{
+    font-size: 21px;
+    color: var(--color-text);
+    margin-top: 13px;
+}
+
+.khoi li{
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 15px;
+    color: var(--color-text-1);
+}
+
+.logoChan{
+    width: 49%;
+    height: auto;
+    float: right;
+}
+
+.text_thg1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.list1{
+    margin-top: 50px;
+}
+
+.thg1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.bat{
+    display: block;
+}
+
+
+.khoi li:hover{
+    color: var(--color-text);
+}

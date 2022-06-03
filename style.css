@@ -1,0 +1,554 @@
+@font-face {
+    font-family: SignikaNegative;
+    src: url(SignikaNegative.ttf);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: SignikaNegative;
+}
+
+:root{
+    --color-br: pink;
+    --color-br-hv: azure;
+    --color-br-1: white;
+    --color-text: black;
+    --color-text-1: gray;
+    --color-text-hv: rgb(0, 88, 176);
+}
+
+[data-theme="dark"] {
+    --color-br: rgb(46, 46, 46);
+    --color-br-hv: gray;
+    --color-br-1: rgb(169, 169, 169);
+    --color-text: white;
+    --color-text-1: gray;
+    --color-text-hv: rgb(45, 45, 45);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-br);
+    border-radius: 3px;
+}
+
+
+*{
+    background-color: var(--color-br-1);
+}
+
+.lammo{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgb(191, 201, 201 , .7);
+}
+
+
+.mot{
+    width: 100%;
+}
+
+.mot_Hai{
+    display: block;
+    cursor: pointer;
+    float: left;
+    width: 12.5%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    border-right: 2px solid var(--color-text);
+    border-top: 2px solid var(--color-text);
+    border-bottom: 2px solid var(--color-text);
+    background-color: var(--color-br);
+    color: var(--color-text);
+}
+
+.mot_Hai *{
+    background-color: var(--color-br);
+    color: var(--color-text);
+}
+
+.theme-switch-wrapper{
+    padding-top: 0.5%;
+}
+
+.theme-switch input {
+    display:none;
+  }
+
+.theme-switch {
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    width: 60px;
+}
+  
+.slider {
+    background-color: var(--color-text-1);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+  
+.slider:before {
+    background-color: var(--color-br-1);
+    bottom: 4px;
+    content: "";
+    height: 24px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 24px;
+}
+  
+input:checked + .slider {
+    background-color: #eee;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.mot_Hai_sec{
+    margin-top: -43px;
+    float: right;
+    width: 18%;
+    /* background-color: aqua; */
+    height: 50px;
+    text-align: right;
+}
+
+
+.icon_Sec{
+    position: relative;
+    top: 6px;
+    color: var(--color-text);
+    font-size: 2.5rem;
+}
+
+.the_Inp{
+    background-color: azure;
+    margin-top: 1%;
+    width: 50%;
+    height: 35px;
+
+}
+
+.nameText >i{
+    margin: 0 8px;
+}
+
+.mot_Hai:hover{
+    background-color: var(--color-br-hv);
+    color: var(--color-text);
+    font-size: 2.3rem;
+}
+
+.loggin:hover{
+    font-size: 2.1rem;
+}
+
+.loggin:hover > .iconlg{
+    background-color: var(--color-br-hv);
+    color: var(--color-text);
+}
+
+
+.the_Inp:focus{
+    width: 70%;
+}
+
+.img_Mot{
+    width: 100%;
+    height: auto;
+}
+
+.kdc{
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+}
+
+.hai{
+    /* position: fixed; */
+    display: flex;
+    width: 100%;
+}
+
+.hai_Mot{
+    cursor: pointer;
+    flex: 1;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 50px;
+    border-right: 2px solid var(--color-text);
+    border-top: 2px solid var(--color-text);
+    border-bottom: 2px solid var(--color-text);
+    background-color: var(--color-br);
+    color: var(--color-text);
+}
+
+.gmenu{
+    position: relative;
+}
+
+.gmenu:hover > .menucon{
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    display: block;
+}
+
+.menucon{
+    display: none;
+    position:absolute;
+    left: 30%;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.menucon li:hover{
+    background-color: var(--color-br-hv);
+    font-size: 2.2rem;
+}
+
+
+.cmenu{
+    position: relative;
+}
+
+.cmenu:hover > .menu{
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    display: block;
+}
+
+.menu{
+    display: none;
+    position:absolute;
+    left: 30%;
+    font-size: 2rem;
+    width: 90%;
+}
+
+.menu li:hover{
+    background-color: var(--color-br-hv);
+    font-size: 2.2rem;
+}
+
+
+@keyframes swingdown {
+    0% {
+       opacity: .99999;
+       transform: rotateX(90deg);
+    }
+    30% {
+       transform: rotateX(-20deg) rotateY(5deg);
+       animation-timing-function: ease-in-out;
+    }
+    65% {
+       transform: rotateX(20deg) rotateY(-3deg);
+       animation-timing-function: ease-in-out;
+    }
+    100% {
+       transform: rotateX(0);
+       animation-timing-function: ease-in-out;
+    }
+}
+
+.hai_Mot *{
+    color: var(--color-text);
+    background-color: var(--color-br);
+}
+
+.icon_home{
+    font-size: 20px;
+}
+
+.hai_Mot:hover{
+    background-color: var(--color-br-hv);
+    color: var(--color-text);
+    font-size: 2.3rem;
+}
+
+.home:hover > .icon_home{
+    background-color: var(--color-br-hv);
+    color: var(--color-text);
+    font-size: 2.3rem;
+}
+
+
+.img_Hai{
+    width: 100%;
+    height: auto;
+}
+
+.the_Chu_chay{
+    margin-left: 40%;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-text);
+    border-left: 2px solid var(--color-text);
+}
+
+.the_Login{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--color-text);
+    background-color: rgb(227, 243, 252);
+}
+
+.the_Login *{
+    background-color: rgb(227, 243, 252);
+}
+
+.textdn{
+    position: absolute;
+    color: red;
+    left: 50%;
+    font-size: 2.5rem;
+    transform: translate(-50%);
+    top: 10%;
+}
+.X{
+    margin-right: 3%;
+    margin-top: 3%;
+    float: right;
+    font-size: 2.7rem;
+    color: rgb(142, 153, 163);
+}
+
+.X:hover{
+    /* transform: rotate(40deg); */
+    color: rgb(79, 81, 81);
+}
+
+
+.sai_tk{
+    margin-top: 3%;
+    color: red;
+    margin-left: 15%;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.bat{
+    display: block;
+}
+
+
+.anhLogo{
+    margin-left: 1%;
+    width: 13%;
+    height: auto;
+}
+
+.ngang{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.form_login{
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+.icon_log{
+    position: relative;
+    top: 7px;
+    margin-left: 16%;
+}
+
+.style_form{
+    width: 60%;
+    margin-left: 2%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+}
+
+.Load{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 6%;
+    padding: 5px 0;
+    width: 55%;
+    border: none;
+    margin-left: 22.5%;
+    margin-bottom: 5%;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.Load:hover{
+    font-size: 1.7rem;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    /* height: 1000px; */
+    background-color: var(--color-br-1);
+    padding-bottom: 20px;
+}
+
+.left{
+    flex: 7;
+}
+
+.texttt{
+    margin-top: 3%;
+    font-size: 2.2rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.right{
+    flex: 5;
+    margin-left: 1%;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+.sukien{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(191, 201, 201);
+    font-size: 2.3rem;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+
+.listTt{
+    clear: left;
+    width: 100%;
+}
+
+.khoiTt{
+    position: relative;
+    display: block;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.chitiet{
+    margin-left: 10%;
+    cursor: pointer;
+    margin-bottom: 2%;
+    background-color: #eee;
+}
+
+.textTtc{
+    cursor: pointer;
+    position: absolute;
+    left: 45%;
+    color: var(--color-text);
+    font-size: 2.1rem;
+}
+
+.textTtc:hover {
+    font-size: 2.2rem;
+    color: var(--color-text-hv);
+    text-decoration: underline;
+}
+.aTintuc{
+    width: 40%;
+    float: left;
+}
+
+.ttchay{
+    width: 100%;
+}
+
+
+.chanTrang{
+    width: 100%;
+    display: flex;
+    /* margin-top: 5%; */
+}
+
+.chanTrang *{
+    background-color: var(--color-br);
+}
+
+.theChan{
+    display: block;
+    flex: 1;
+    height: 150px;
+    /* background-color: pink; */
+}
+
+.oChan{
+    margin-left: 19px;
+}
+
+.textChan{
+    font-size: 21px;
+    color: var(--color-text);
+    margin-top: 13px;
+}
+
+.khoi li{
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 15px;
+    color: gray;
+}
+
+.logoChan{
+    width: 49%;
+    height: auto;
+    float: right;
+}
+
+
+.khoi li:hover{
+    color: var(--color-text);
+}
